@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(102, 116, 136);
+}
+#panel{
+    overflow: hidden;
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+#ptop{
+    padding: 0px 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(48, 71, 85);
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.elem h2{
+    font-size: 2rem;
+}
+
+
+.box{
+    padding: 10px 20px; /*topbottom, left right*/
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(106, 184, 226);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#pbtm{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in 0.5s;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+     height: 85%;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 18px;
+    background-color: rgb(123, 180, 96);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+    cursor: pointer;
+}
+.bubble:hover{
+    background-color: rgb(82, 202, 82);
+}
+
+@media  screen and (max-width:768px) {
+    #ptop{
+        padding: 0px 5%;
+      }
+    .elem h2{
+        font-size: 0.8rem;
+    }
+    .elem{
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+    .box{
+        padding: 5px 10px; /*topbottom, left right*/
+        font-size: 1rem;
+    }
+    .bubble{
+        width: 2rem;
+        height: 2rem;
+        font-size: 12px;
+    }
+
+
+}
